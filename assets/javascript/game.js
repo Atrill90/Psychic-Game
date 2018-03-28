@@ -36,6 +36,7 @@ document.querySelector(".userInput").addEventListener("keypress", function (e) {
         document.querySelector(".userInput").value = "";
 
     } else {
+        alert("You lost!")
         losses++;
         computerGuess = generateLetter();
         console.log(computerGuess);

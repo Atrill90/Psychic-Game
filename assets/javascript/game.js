@@ -39,9 +39,9 @@ document.querySelector(".userInput").addEventListener("keypress", function (e) {
 
     }
     var html =
-    `<p> guesses ${guesses} </p>
-    <p> wins ${wins}</p>
-    <p> losses ${losses}</p>`;
+    `<p> Guesses ${guesses} </p>
+    <p> Wins ${wins}</p>
+    <p> Losses ${losses}</p>`;
 
     container.innerHTML = html
 

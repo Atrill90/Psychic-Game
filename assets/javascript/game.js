@@ -21,10 +21,11 @@ document.querySelector(".userInput").addEventListener("keypress", function (e) {
 
 
     var userGuess = e.key.toLowerCase();;
-   console.log(userGuess);
+   
 
     if (guesses > 1) {
         if (computerGuess === userGuess) {
+            alert("You won!")
             wins++;
            computerGuess = generateLetter();
            console.log(computerGuess);

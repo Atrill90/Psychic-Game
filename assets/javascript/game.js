@@ -25,6 +25,7 @@ document.querySelector(".userInput").addEventListener("keypress", function(e){
             console.log(wins);
             guesses = 10;
             document.querySelector(".userInput").value = "";
+            randomKey
             container.innerHTML = html
         }else{
             guesses--;
@@ -35,9 +36,11 @@ document.querySelector(".userInput").addEventListener("keypress", function(e){
         losses++;
         guesses = 10;
         container.innerHTML = html
-        
+    
     }
+     function randomKey(userGuess)
      
+
 });
 
 

@@ -1,15 +1,17 @@
-body{
+body {
     background-color: teal;
 }
-h1{
+
+h1 {
     font-family: 'Chicle', cursive;
     text-align: center;
 }
-p{
-    color: white;
-text-align: center;
-}
-.scoreBoard{
-    text-align: center;
 
+p {
+    color: white;
+    text-align: center;
+}
+
+.scoreBoard {
+    text-align: center;
 }

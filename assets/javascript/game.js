@@ -9,8 +9,8 @@ var container = document.querySelector(".container");
 // random letter function
 function generateLetter() {
     console.log("newLetterGenerated");
-   return alphabet[Math.floor(Math.random() * alphabet.length)];
-    
+    return alphabet[Math.floor(Math.random() * alphabet.length)];
+
 }
 
 // generating random letter
@@ -21,14 +21,14 @@ document.querySelector(".userInput").addEventListener("keypress", function (e) {
 
 
     var userGuess = e.key.toLowerCase();;
-   
+
     // If you still have 2 or more guesses left run these functions.
     if (guesses > 1) {
         if (computerGuess === userGuess) {
             alert("You won! You and the computer both chose " + userGuess)
             wins++;
-           computerGuess = generateLetter();
-           console.log(computerGuess);
+            computerGuess = generateLetter();
+            console.log(computerGuess);
             guesses = 10;
         } else {
             guesses--;
@@ -45,9 +45,10 @@ document.querySelector(".userInput").addEventListener("keypress", function (e) {
         guesses = 10;
 
     }
+    // The scoreboard 
     document.querySelector(".userInput").value = "";
     var html =
-    `<p> Guesses remaining ${guesses} </p>
+        `<p> Guesses remaining ${guesses} </p>
     <p> Wins ${wins}</p>
     <p> Losses ${losses}</p>`;
 

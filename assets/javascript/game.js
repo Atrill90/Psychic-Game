@@ -22,7 +22,7 @@ document.querySelector(".userInput").addEventListener("keypress", function (e) {
 
     var userGuess = e.key.toLowerCase();;
    
-
+    // If you still have 2 or more guesses left run these functions.
     if (guesses > 1) {
         if (computerGuess === userGuess) {
             alert("You won! You and the computer both chose " + userGuess)
@@ -33,10 +33,12 @@ document.querySelector(".userInput").addEventListener("keypress", function (e) {
         } else {
             guesses--;
         }
+        // hey I should clear the field of any text after a guess
         document.querySelector(".userInput").value = "";
 
+        // once you've run out of guesses all these awful things happen
     } else {
-        alert("You lost!")
+        alert("You lost! The computer picked " + computerGuess)
         losses++;
         computerGuess = generateLetter();
         console.log(computerGuess);

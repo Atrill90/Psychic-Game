@@ -25,7 +25,7 @@ document.querySelector(".userInput").addEventListener("keypress", function (e) {
 
     if (guesses > 1) {
         if (computerGuess === userGuess) {
-            alert("You won!")
+            alert("You won! You and the computer both chose " + userGuess)
             wins++;
            computerGuess = generateLetter();
            console.log(computerGuess);
